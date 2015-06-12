@@ -1,0 +1,129 @@
+/* kleuren */
+$pink: #f4b8b0;
+
+$root: "../../";
+
+/* mixins */
+@mixin full-screen {
+    width: 100%;
+    height: 100vh;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -o-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+/* algemeen */
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    min-height: 100%;
+    font-family: "brandon";
+    font-size: 12px;
+    color: white;
+}
+
+/* details */
+
+/* text */
+
+h2 {
+
+}
+
+small {
+    text-transform: uppercase;
+}
+
+/* splash */
+
+#splash {
+    @include full-screen;
+    background: radial-gradient(#f4d8ce, #eb8b7e); 
+    background: -webkit-radial-gradient(#f4d8ce, #e89991);
+    background: -o-radial-gradient(#f4d8ce, #eb8b7e);
+    background: -moz-radial-gradient(#f4d8ce, #eb8b7e);
+}
+
+#splash-noise::before { 
+    content: '';
+    @include full-screen;
+    background: url('#{$root}img/noise.gif');
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    opacity: 0.25;
+}
+
+#splash-noise {
+    @include full-screen;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#splash-content {
+    margin: 0 auto;
+    overflow: hidden;
+    width: auto;
+    z-index: 8;
+}
+    #splash-logo { 
+        float: left; 
+        margin-right: 30px; 
+    }
+
+    #splash-quote { 
+        float: left; 
+        margin-top: 2em;
+    }
+
+/* page border */
+
+.border {
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+}
+
+.top, .bottom {
+    height: 10px;
+    width: 100%;
+}
+
+.top {
+    top: 0; 
+    left: 0;
+}
+
+.left, .right {
+    width: 10px;
+    height: 100%;
+    top: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+
+

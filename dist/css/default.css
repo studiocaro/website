@@ -1,0 +1,91 @@
+/* kleuren */
+/* mixins */
+/* algemeen */
+* {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+body, html {
+  min-height: 100%;
+  font-family: "brandon";
+  font-size: 12px;
+  color: white; }
+
+/* details */
+/* text */
+small {
+  text-transform: uppercase; }
+
+/* splash */
+#splash {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(#f4d8ce, #eb8b7e);
+  background: -webkit-radial-gradient(#f4d8ce, #e89991);
+  background: -o-radial-gradient(#f4d8ce, #eb8b7e);
+  background: -moz-radial-gradient(#f4d8ce, #eb8b7e); }
+
+#splash-noise::before {
+  content: '';
+  width: 100%;
+  height: 100vh;
+  background: url("../../img/noise.gif");
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 0;
+  opacity: 0.25; }
+
+#splash-noise {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#splash-content {
+  margin: 0 auto;
+  overflow: hidden;
+  width: auto;
+  z-index: 8; }
+
+#splash-logo {
+  float: left;
+  margin-right: 30px; }
+
+#splash-quote {
+  float: left;
+  margin-top: 2em; }
+
+/* page border */
+.border {
+  background-color: white;
+  position: fixed;
+  z-index: 10; }
+
+.top, .bottom {
+  height: 10px;
+  width: 100%; }
+
+.top {
+  top: 0;
+  left: 0; }
+
+.left, .right {
+  width: 10px;
+  height: 100%;
+  top: 0; }
+
+.left {
+  left: 0; }
+
+.right {
+  right: 0; }
+
+.bottom {
+  bottom: 0; }
+
+/*# sourceMappingURL=default.css.map */
