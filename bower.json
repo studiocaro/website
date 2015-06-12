@@ -1,0 +1,20 @@
+{
+  "name": "STUDIOCARO",
+  "version": "0.0.0",
+  "homepage": "studiocaro.be",
+  "authors": [
+    "Caroline Vermeir <hello@studiocaro.be>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "oridomi": "~1.1.5",
+    "jquery": "~2.1.4"
+  }
+}
